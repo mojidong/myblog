@@ -91,9 +91,9 @@ defaultContentLanguage = "en"           # Default language to use
   mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
-  baidu_analytics = ""      # Baidu Analytics
-  baidu_verification = ""   # Baidu Verification
-  google_verification = ""  # Google_Verification         # 谷歌
+  baidu_analytics = "b9f1218e0ad0bdc9e77a57a6d8a143be"      # Baidu Analytics
+  #baidu_verification = ""   # Baidu Verification
+  #google_verification = ""  # Google_Verification         # 谷歌
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
