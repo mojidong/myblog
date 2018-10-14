@@ -19,9 +19,9 @@ PygmentsCodefencesGuessSyntax = true
 PygmentsOptions = "linenos=table"
 
 # language support # en / zh-cn / other... translations present in i18n/
-defaultContentLanguage = "en"           # Default language to use
-[languages.en]
-  languageCode = "en"
+defaultContentLanguage = "zh-cn"           # Default language to use
+[languages.zh-cn]
+  languageCode = "zh-cn"
 
 [author]                  # essential                     # 必需
   name = "mojidong"
@@ -32,22 +32,22 @@ defaultContentLanguage = "en"           # Default language to use
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "Home"
+  name = "日志"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "Archives"
+  name = "归档"
   weight = 20
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "Tags"
+  name = "标签"
   weight = 30
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "Categories"
+  name = "分类"
   weight = 40
   identifier = "categories"
   url = "/categories/"
