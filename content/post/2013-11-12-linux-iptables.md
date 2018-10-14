@@ -11,7 +11,7 @@ iptables是Linux上常用的防火墙软件。这里简单介绍下怎么使用�
 
 > iptables命令要在root下执行
 
-###初始化防火墙
+### 初始化防火墙
 
 ```bash
 iptables -P INPUT ACCEPT    # 设置INPUT chain默认行为为接受
@@ -24,7 +24,7 @@ iptables -X					# 删除所有自定义的chain
 
 经过上述操作之后你的防火墙现在没有任何规则，也就说你的机器完全暴露在了网络之中，跟没穿衣服没两样。
 
-###新增规则
+### 新增规则
 
 对于进来的封包过滤的规则都是在INPUT chain上设置的。
 
@@ -57,7 +57,7 @@ iptables -X					# 删除所有自定义的chain
 	
 	要开放什么端口按这样加就好了
 
-###切换默认策略
+### 切换默认策略
 
 把衣服穿起来
 
@@ -68,7 +68,7 @@ iptables -P INPUT DROP    # 设置INPUT chain默认行为为丢弃
 
 如果之前的规则一个都没匹配上最终这里的默认行为会触发。
 
-###查看规则
+### 查看规则
 
 ```bash
 iptables -L -n
@@ -78,7 +78,7 @@ iptables-save
 
 个人比较喜欢用`iptables-save`
 
-###保存规则
+### 保存规则
 
 如果你是redhat或centos
 

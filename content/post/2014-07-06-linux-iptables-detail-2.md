@@ -9,11 +9,11 @@ aliases: [/linux/2014/07/06/linux-iptables-detail-2/]
 
 之前讲解了iptables基本语法和用法，今天详细讲下iptables规则链的整个执行流程。
 
-##规则链执行流程
+## 规则链执行流程
 
 先上一张图（借用下[鸟哥](http://linux.vbird.org/)的图）
 
-![iptables规则执行流程](/assets/img/iptables.gif)
+![iptables规则执行流程](/images/iptables.gif)
 
 从上图可以很清晰的看到数据包在规则链中的流动路径:
 

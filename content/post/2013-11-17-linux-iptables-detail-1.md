@@ -9,7 +9,7 @@ aliases: [/linux/2013/11/17/linux-iptables-detail-1/]
 
 今天详细讲下linux防火墙iptables。
 
-##1.表和链
+## 1.表和链
 
 iptables有如下几个表：
 
@@ -20,24 +20,24 @@ iptables有如下几个表：
 
 > 对于mangle一般不建议使用，会出现一些意想不到的问题，如果你愿意完全可以忘掉mangle的存在，后面主要围绕nat和filter讲解。
 
-####1.1 mangle
+#### 1.1 mangle
 说了忘掉的。
 
-####1.2 nat
+#### 1.2 nat
 nat有如下几条链
 
 * PREROUTING 对进来的包进行处理
 * POSTROUTING 对出去的包进行处理
 * OUTPUT 对本地产生的出去的包进行处理
 	
-####1.3 filter
+#### 1.3 filter
 filter有如下几条链
 
 * INPUT 对进来得包进行处理
 * OUTPUT 对出去的包进行处理
 * FORWARD 对转发的包进行处理
 
-##2.规则
+## 2.规则
 
 一条规则一定是挂在某条链上的，一条链一定是挂在某张表上的，所以一条规则一定是挂在某张表的某条链上的。
 
@@ -48,7 +48,7 @@ table
     	|
   		---rule
 ```
-####2.1 语法
+#### 2.1 语法
 
 新增一条规则需要使用`iptables`命令（需要root权限）。
 
@@ -84,7 +84,7 @@ target = -j targetname [per-target-options]                   #规则语法targe
 
 > 参数table是可选的，如果没有设置table默认则是filter。
 
-####2.2 初始化
+#### 2.2 初始化
 
 在添加规则之前我们一般会初始化防火墙
 
@@ -98,7 +98,7 @@ iptables -Z                #清空包计数器
 
 > 这里有个值得注意的地方就是一定要记得设置`filter`的`INPUT`,`OUTPUT`的默认行为为`ACCEPT`,因为如果不设置，后面的命令把所有规则删除了，这个时候就会走到链的默认行为，如果之前的默认行为是`DROP`或`REJECT`那就会把自己挡在外面（假定你是ssh登录），到时候真是欲哭无泪。
 
-####2.3 添加规则
+#### 2.3 添加规则
 
 ```bash
 iptables [-t table] -A chain rule-specification 
