@@ -340,7 +340,7 @@ public class Test {
 1. 拷贝`ThreadLocal`是在子线程创建的时候，所以线程池中`ThreadLocal`后续不拷贝主线程的`ThreadLocal`，因为线程池中大多数情况下线程是复用的，重新建的情况很少。
 2. 当初创建子线程的主线程如果清除`ThreadLocal`子线程中的`ThreadLocal`也会被清除。
 
-下是验证代码：
+下面是验证代码：
 
 ```java
 public class Test {
