@@ -52,6 +52,8 @@ contract!`通过google查询发现是违反了排序规约，原来从java7开�
 
 **扒了一下源码发现只有在排序元素大于32才会有机率出现此错误。**
 
+所以这也解释了为什么升级jdk8后大半年没有报错。
+
 下面是一段测试代码:
 
 ```java
@@ -73,6 +75,8 @@ public static void main(String[] args) throws Exception {
     }
 }
 ```
+
+> 有兴趣的同学可以自已研究一下源码。
 
 ## 解决方案
 
