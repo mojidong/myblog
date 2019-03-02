@@ -237,7 +237,7 @@ public class Test {
         ThreadLocalContext.initContext();
 
         // 主线程中的逻辑，会操作主线程上下文
-        InheritableThreadLocal     cService.setNum();
+        cService.setNum();
 
         // 获取主线程中的上下文
         // Context context = ThreadLocalContext.getContext();
