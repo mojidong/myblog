@@ -4,7 +4,7 @@ date: 2018-10-14T12:53:58+08:00
 lastmod: 2018-10-14T22:33:00+_08:00
 description: "迁移博客到hugo"
 categories: ["other"]
-tag: ["other"]
+tags: ["other"]
 ---
 
 这两天把blog从[jekyll](https://jekyllrb.com/)迁移到了[hugo](https://gohugo.io/)。下面是hugo对自已的简介：

@@ -4,7 +4,7 @@ date: 2019-02-24T10:28:30+08:00
 lastmod: 2019-02-24T10:28:30+08:00
 description: "java增强型thread local, InheritableThreadLocal"
 categories: ["java"]
-tag: ["java"]
+tags: ["java", "thread local"]
 ---
 
 最近使用`InheritableThreadLocal`遇到一些问题，这里总结一下。

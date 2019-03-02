@@ -4,7 +4,7 @@ date: 2019-02-23T20:33:39+08:00
 lastmod: 2019-02-23T20:33:39+08:00
 description: "java排序违返规约错误"
 categories: ["java"]
-tag: ["java"]
+tags: ["java", "sort"]
 ---
 
 ## 问题
